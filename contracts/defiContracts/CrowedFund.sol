@@ -1,10 +1,8 @@
 //SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
+
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-    
-
-
 contract CrowdFund {
 
     event Launch(
@@ -109,9 +107,6 @@ contract CrowdFund {
 
         emit Claimed(_id);
         
-
-
-
     }
     function refund(uint _id) external {
         Campaign storage campaign = campaigns[_id];
